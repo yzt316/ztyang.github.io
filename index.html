@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- 百度联盟 -->
+  <meta name="baidu_union_verify" content="46e227ad81d5513c6cd8288c18c6ebad">
+
+  <!-- google analytics -->
+  <meta name="google-site-verification" content="SzCGQVmA8Mtk40elee-bCGpq2YSCAmEulSNEZHYCkFc" />
+
+  <!--百度站长之家验证-->
+  <meta name="baidu-site-verification" content="4woRik4rfk" />
+
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+  <title>ztyang的博客</title>
+  <meta property="og:title" content="ztyang的博客">
+  <link rel="stylesheet" type="text/css" href="/./main.234bc0.css">
+  <!-- 样式 -->
+  <style type="text/css">
+    #container.show {
+      background: linear-gradient(200deg, #a0cfe4, #e8c37e);
+    }
+  </style>
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c41be5a0c9f014e977695f66c065b5d3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+
+      <div class="overlay" style="background: #4d4d4d"></div>
+      <div class="intrude-less">
+        <header id="header" class="inner">
+          <a href="/" class="profilepic">
+			<img src="/img/avatar.png" class="js-avatar">
+		</a>
+          <hgroup>
+            <h1 class="header-author"><a href="/">Zhisheng Tian</a></h1>
+          </hgroup>
+          <p class="header-subtitle">一步一步走向更元！</p>
+          <!-- 属于自己的目录结构 -->
+          <nav class="header-menu">
+            <ul>
+              <li><a href="/">主页</a></li>
+              <li><a href="/archives/">博客</a></li>
+              <li><a href="/tags/随笔/">随笔</a></li>
+            </ul>
+          </nav>
+          <!--快捷链接  -->
+          <nav class="header-smart-menu">
+            <a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+            <a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">芳芳的空间</a>
+          </nav>
+        </header>
+
+      </div>
+    </div>
+    <!-- 文章前面 -->
+    <div class="article-entry" itemprop="articleBody">
+
+      <p><img src="http://ohfk1r827.bkt.clouddn.com/p3.jpeg-1" alt=""></p>
+      <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3>
+      <p>这段时间自己做的项目中需要调用服务提供者的服务（接口），具体就是：我这边需要将页面所输入的 Groovy 脚本代码传给别人提供的服务接口，然后那边返回脚本编译的结果给我，我需要将编译结果展示在页面，用的就是 RestTemplate
+        了，那 RestTemplate 是什么呢？简单说就是：简化了发起 HTTP 请求以及处理响应的过程，并且支持 REST 。下文就稍微总结下。<br>
+        <a class="article-more-a" href="/2017/12/03/RestTemplate/#more">more >></a>
+    </div>
+    <!-- 展开显示更多 -->
+    <div class="article-info article-info-index">
+      <div class="article-tag tagcloud">
+        <i class="icon-price-tags icon"></i>
+        <ul class="article-tag-list">
+          <li class="article-tag-list-item">
+            <a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Spring</a>
+          </li>
+        </ul>
+      </div>
+      <p class="article-more-link">
+        <a class="article-more-a" href="/2017/12/03/RestTemplate/">展开全文 >></a>
+      </p>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  </article>
+  </header>
+
+
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  <span id="busuanzi_container_page_pv">本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+  <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  </footer>
+  </div>
+
+  <script src="/./main.234bc0.js"></script>
+
+  <div class="tools-wrap">
+    <section class="tools-section tools-section-all" q-show="innerArchive">
+      <div class="search-wrap">
+        <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+        <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+        <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+      </div>
+      <div class="widget tagcloud search-tag">
+        <p class="search-tag-wording">tag:</p>
+        <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+        <ul class="article-tag-list" q-show="showTags">
+          <li class="article-tag-list-item">
+            <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
